@@ -80,17 +80,6 @@ See the section about <a href="https://facebook.github.io/create-react-app/docs/
 }
 ```
 
-```
-@misc{ohm2023collection,
-      title={Collection Space Navigator: An Interactive Visualization Interface for Multidimensional Datasets}, 
-      author={Tillmann Ohm and Mar Canet Solà and Andres Karjus and Maximilian Schich},
-      year={2023},
-      eprint={2305.06809},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
-```
-
 ## Authors
 <a href="https://tillmannohm.com/" target="_blank">Tillmann Ohm</a>, 
 <a href="https://var-mar.info/" target="_blank">Mar Canet Solà</a>
