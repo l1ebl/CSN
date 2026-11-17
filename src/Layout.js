@@ -6,6 +6,7 @@ import InfoPane from './InfoPane'
 import ViewPane from './ViewPane'
 import MappingsPane from './MappingsPane'
 import Export from './Export'
+import SemanticSearchPane from './SemanticSearchPane'
 import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import './scss/Menu.scss';
 import Projection from './Projection'
@@ -330,6 +331,22 @@ class Layout extends Component {
                   />
                 </MenuItem>
               </SubMenu>
+
+
+              <SubMenu
+                title={collapsedControl ? null : "Semantic Search"}  
+                icon={collapsedControl ? < FaSearch />  : null }
+                >
+
+                <MenuItem>
+                  <SemanticSearchPane
+                    datasetDir={this.props.datasetDir}
+                    total={settings.total}
+                    calculateProjection={this.calculateProjection}
+                  />
+                </MenuItem>
+              </SubMenu>
+
               <SubMenu
                 title={collapsedControl ? null : "Export Filtered Data"}  
                 icon={collapsedControl ? <FaCloudDownloadAlt />  : null }

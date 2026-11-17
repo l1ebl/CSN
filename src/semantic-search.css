@@ -1,0 +1,78 @@
+.concept-search {
+  position: fixed;
+  z-index: 20;
+  left: 50%;
+  bottom: 18px;
+  width: min(900px, calc(100vw - 32px));
+  transform: translateX(-50%);
+  padding: 10px;
+  color: #f2f2f2;
+  background: rgba(25, 25, 25, 0.94);
+  border: 1px solid #5c5c5c;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
+}
+
+.concept-search__row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.concept-search__input {
+  flex: 1 1 360px;
+  min-width: 0;
+  padding: 9px 11px;
+  border: 1px solid #777;
+  color: #fff;
+  background: #111;
+  font: inherit;
+}
+
+.concept-search__model,
+.concept-search button {
+  padding: 9px 10px;
+  border: 1px solid #777;
+  color: #fff;
+  background: #292929;
+  font: inherit;
+  cursor: pointer;
+}
+
+.concept-search button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.concept-search__threshold {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 135px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.concept-search__threshold input {
+  width: 100%;
+  height: 3em;
+}
+
+.concept-search__error {
+  margin-top: 6px;
+  color: #ff9c9c;
+  font-size: 12px;
+}
+
+@media (max-width: 700px) {
+  .concept-search__row {
+    flex-wrap: wrap;
+  }
+
+  .concept-search__input {
+    flex-basis: 100%;
+  }
+
+  .concept-search__threshold {
+    flex: 1;
+  }
+}
